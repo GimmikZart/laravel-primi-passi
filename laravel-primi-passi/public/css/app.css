@@ -1,12 +1,709 @@
-header {
+/* FOGLIO DI STILE HUBSPOT */
+
+/*--------------- REGOLE GENERALI--------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+
+.centratura {
+  margin: 0 25%;
+  width: 1080px;;
+  height: 100%;
+
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flottati {
+  float: left;
+}
+
+
+#unterzolarghezza {
+  width: 30%;
+}
+
+.metalarghezza {
+  width: 50%;
+}
+
+.testonormale {
+  font-size: 15px;
+  color: #5e6e8b;
+}
+
+.testopiccolo {
+  font-size: 13px;
+}
+
+.titologrosso {
+  color: #35485c;
+  font-weight: bold;
+}
+
+.vaialcentro {
+  display:block;
+  margin:0px auto;
+  text-align:center;
+}
+
+.flexati {
+  display: flex;
+  justify-content: space-around;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+.testointerno {
+  width: 65%;
+}
+
+/* .debug {
+  padding: 20px;
+  border: 1px solid black;
+} */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/*------------------------- PARTE ALTA -----------------------------*/
+
+/*-------------------- HEADER-------------- */
+
+/* ------BARRA FIXATA -----*/
+
+#boxfixato {
+  position: fixed;
+  padding: 20px;
+  top: 0;
+  background-color: #f5f8fa;
+  width: 100%;
+  border-bottom: 1px solid #cbd6e2;
+}
+
+select {
+  border: none;
+  font-size: 20px;
+  background-color: #f5f8fa;
+}
+
+#lingue {
+  float: left;
+  padding: 10px 20px 10px;
+
+}
+
+#contactsales {
+  display: inline-block;
+  float: left;
+  /* margin-left: 20px; */
+  padding: 15px 20px 10px;
+
+  border-left: 1px solid #cbd6e2;
+  color: #35485c;
+  font-weight: bold;
+}
+
+#gethubspotfree {
+  float: right;
+  padding: 13px;
+  max-width: 150px;
+  font-size: 12px;
+  background-color: #ff7a59;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+#gethubspotfree:hover {
+  background-color: #ffbcac;
+  transition: 0.3s ease-in-out;
+}
+
+#login {
+  float: right;
+  padding: 10px 25px;
+  background-color: white;
+  color: #ff7a59;
+  border: 1px solid #ff7a59;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+#login:hover {
+  background-color: #fff1ee;
+  color: #ff7a59;
+  transition: 0.3s ease-in-out;
+}
+
+#search {
+  float: right;
+  padding-right: 30px;
+  margin-top: 12px;
+  font-size: 20px;
+  color: #0ba8c0;
+}
+
+
+
+
+/* -------NAVIGATORE---- */
+
+#navigatore {
+  background-color: white;
+  margin-top: 86px;
+  padding: 25px 0;
   display: flex;
 }
 
-header h1 {
-  color: red;
+#navigatore img {
+  width: 110px;
+  height: 30px;
+}
+#navigatore ul {
+  display: flex;
 }
 
-footer h1 {
-  color: blue;
+#navigatore ul li{
+  display: inline-block;
+  margin: 0 25px;
+  font-weight: bold;
 }
 
+#navigatore ul li a {
+  color: #33476a;
+  font-size: 17px;
+}
+
+
+
+
+
+
+/*---------------------------- CONTENUTO PAGINA -----------------------------------------*/
+
+/* ---------JUMBOTRON------------------------------------ */
+
+#jumbotron {
+  background-color: #fef3ee;
+  height: 750px;
+}
+
+#jumbotron .centratura {
+  background-image: url("../img/jumbotron.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 10px 190px;
+  padding-top: 100px;
+  padding-bottom: 180px;
+}
+
+#jumbotron .titologrosso , #jumbotron p  {
+  text-align: left;
+}
+
+#jumbotron p {
+  margin-top: 20px;
+}
+
+#jumbotron a {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 25px 30px;
+  font-size: 17px;
+  background-color: #ff7a59;;
+  border-radius: 3px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#jumbotron a:hover {
+  background-color: #ffbcac;
+  transition: 0.3s ease-in-out;
+}
+
+#unterzolarghezza h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+
+
+/* ----------MEGACONTENITORE FEATURE-------- */
+
+#feature{
+  padding-top: 60px;
+  background-color: #f5f8fa;
+  padding-bottom: 60px;
+}
+
+/* Parte in alto rubik + testi  */
+#rubik {
+  width: 200px;
+  height: 200px;
+}
+
+#feature h3 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+#feature p {
+  margin-top: 30px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+#feature .destra p {
+  text-align: left;
+  font-size: 15px;
+}
+
+
+/* Free HubSpot CRM  */
+
+#freecrm {
+  margin-top: 100px;
+  background-color: white;
+  width: 100%;
+  padding: 40px;
+}
+
+#libri {
+  display: block;
+  width: 200px;
+  height: 150px;
+}
+
+#freecrm .sinistra{
+  width: 30%;
+  float: left;
+}
+
+#freecrm .destra {
+  width: 70%;
+  float: left;
+  padding-left: 30px;
+}
+
+#freecrm .getstarted {
+  margin-top: 30px;
+}
+
+#freecrm h5 {
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+  text-align: left;
+}
+
+.destra h6 {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.destra ul {
+  margin-top: 20px;
+}
+
+.destra li {
+  list-style: none;
+  padding: 7px 0 ;
+  font-size: 14px;
+  display: inline;
+  margin-right: 30px;
+}
+
+ /* Contenitore triplo marketing
+      sales, service  */
+
+#marksalser {
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+#magia, #cartella, #tavolo {
+  max-width: 200px;
+  height: 150px;
+
+}
+
+#marketing, #sales, #service {
+  float: left;
+  width: 32%;
+  padding: 20px 40px 20px 40px;
+  background-color: white;
+}
+
+#marketing p, #sales p, #service p {
+  text-align: left;
+}
+
+#sales {
+  margin: 0 2%;
+}
+
+#marksalser h5 {
+  font-size: 20px;
+}
+
+#marksalser h6 {
+  margin-top: 20px;
+  border-top: 1px solid #e0e6ed;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+#marksalser li {
+  list-style: none;
+  padding: 7px 0 ;
+  font-size: 14px;
+
+}
+
+.check {
+  color: #ff7c5c;
+  margin-right: 5px;
+}
+
+.getstarted {
+  display: block;
+  color: white;
+  padding: 15px;
+  background-color: #ff7c5c;
+  width: 50%;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+
+
+
+
+
+/* ----------MEGACONTENITORE STATISTICHE-------- */
+.bloccostatistiche {
+  padding: 100px 0;
+  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+}
+
+.statistiche {
+  padding: 100px 0;
+}
+
+.bloccostatistiche h3 {
+  font-size: 30px;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.bloccostatistiche p {
+  color: white;
+  line-height: 30px;
+}
+
+
+.statistiche .vaialcentro {
+  width: 60%;
+}
+
+.statistiche .flottati {
+  width: 25%;
+  padding: 20px;
+
+}
+
+.statistiche .clearfix {
+  width: 100%;
+}
+
+.sopra {
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+
+.bordosinistra {
+  padding-left: 15px;
+}
+
+.bordodestra {
+  border-right: 1px solid white;
+}
+
+.cifragrossa {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.testostatistiche {
+  font-weight: bold;
+}
+
+img {
+  height: 33px;
+}
+
+/* ----------MEGACONTENITORE INVITO-------- */
+#invito {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+/* BLOCCO SOPRA----------------- */
+
+#bloccosopra {
+  width: 100%;
+}
+
+/* SINISTRA----------- */
+
+#numeroclienti {
+  width: 30%;
+}
+
+#numeroclienti h5:nth-child(1) {
+  font-size: 50px;
+  font-weight:900;
+}
+
+
+#numeroclienti .testopiccolo {
+  margin-top: 40px;
+}
+#startgrowing {
+  margin-top: 150px;
+  font-size: 40px;
+}
+
+#numeroclienti p {
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+
+/* DESTRA-------------- */
+
+#boxloghi {
+  float: right;
+  margin-top: 50px;
+}
+
+.loghi {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+#atalassian {
+  width: 160px;
+  height: 15px;
+  vertical-align: middle;
+}
+
+#doordash {
+  width: 160px;
+  height: 15px;
+  vertical-align: middle;
+}
+
+#crowd {
+  width: 160px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+#purple {
+  width: 160px;
+  height: 35px;
+  vertical-align: middle;
+}
+
+#subaru {
+  width: 160px;
+  height: 45px;
+  vertical-align: middle;
+}
+
+#wistia {
+  width: 160px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+#classpass {
+  width: 160px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+#wmare {
+  width: 160px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+
+/* BLOCCO SOTTO------------ */
+
+/* SINISTRA */
+
+#startgrowing{
+  padding-right: 170px;
+}
+
+#startgrowing .getstarted {
+  margin-top: 50px;
+  margin-left: 0;
+  font-size: 15px;
+  width: 160px;
+}
+
+#startgrowing .titologrosso {
+  font-weight: 900;
+}
+
+#startgrowing p {
+  margin-top: 30px;
+}
+
+/* DESTRA */
+
+#donna {
+  width: 370px;
+  height: 444px;
+  float: right;
+  margin-top: 40px;
+  margin-right: 30px;
+}
+
+#bloccosotto .testopiccolo {
+  color:#647383;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------FOOTER--------------------------- */
+
+footer {
+  background-color: #33475b;
+}
+
+footer a {
+  color: #cbd6e2;
+}
+
+/* LISTA FEATURE----------------------------*/
+#footerlist {
+  width: 100%;
+  padding-top: 100px;
+}
+
+#footerlist .flottati {
+  width: 25%;
+}
+
+#footerlist li:nth-child(1) {
+  font-weight: bold;
+}
+
+#footerlist li {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px 0;
+  color: white;
+  font-weight: bold;
+}
+
+/* LISTA SUPPORT + SOCIAL------- */
+#contatta {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+#zonasocial {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#zonasocial .flottati {
+  width: 15%;
+  color: white;
+}
+
+
+
+/* LISTA LINGUE----------------------------------- */
+
+#listalingue ul {
+  margin-top: 50px;
+  text-align: center;
+  border-bottom: 1px solid #7c98b6;
+  padding-bottom: 50px;
+}
+
+#listalingue ul li {
+  display: inline-block;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* LEGAL ------------------------------------------ */
+
+#legal {
+  width: 100%;
+  padding: 30px 0;
+}
+
+#copyright img {
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+
+#copyright p{
+  color: #cbd6e2;
+}
+
+
+#privacy {
+  float: right;
+
+}
+
+#privacy a {
+  margin: 0 20px;
+  color: #cbd6e2;
+  font-weight:bold;
+  font-size: 20px;
