@@ -1,0 +1,12 @@
+header {
+  display: flex;
+}
+
+header h1 {
+  color: red;
+}
+
+footer h1 {
+  color: blue;
+}
+
